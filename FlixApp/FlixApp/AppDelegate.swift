@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  flixproject
+//  FlixApp
 //
 //  Created by Bryan Lopez on 10/18/19.
 //  Copyright © 2019 Bryan Lopez CP. All rights reserved.

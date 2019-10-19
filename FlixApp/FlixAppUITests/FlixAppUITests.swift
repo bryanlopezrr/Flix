@@ -1,6 +1,6 @@
 //
-//  flixprojectUITests.swift
-//  flixprojectUITests
+//  FlixAppUITests.swift
+//  FlixAppUITests
 //
 //  Created by Bryan Lopez on 10/18/19.
 //  Copyright © 2019 Bryan Lopez CP. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class flixprojectUITests: XCTestCase {
+class FlixAppUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
