@@ -15,6 +15,7 @@
 		59D75292235A8F1D0058E2D7 /* FlixAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D75291235A8F1D0058E2D7 /* FlixAppTests.swift */; };
 		59D7529D235A8F1D0058E2D7 /* FlixAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7529C235A8F1D0058E2D7 /* FlixAppUITests.swift */; };
 		59D752AB235A8F790058E2D7 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D752AA235A8F790058E2D7 /* MoviesViewController.swift */; };
+		59D752AD235A9E8D0058E2D7 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D752AC235A9E8D0058E2D7 /* MovieViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		59D7529C235A8F1D0058E2D7 /* FlixAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixAppUITests.swift; sourceTree = "<group>"; };
 		59D7529E235A8F1D0058E2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59D752AA235A8F790058E2D7 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		59D752AC235A9E8D0058E2D7 /* MovieViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				59D75285235A8F1D0058E2D7 /* LaunchScreen.storyboard */,
 				59D75288235A8F1D0058E2D7 /* Info.plist */,
 				59D752AA235A8F790058E2D7 /* MoviesViewController.swift */,
+				59D752AC235A9E8D0058E2D7 /* MovieViewCell.swift */,
 			);
 			path = FlixApp;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59D7527B235A8F1C0058E2D7 /* AppDelegate.swift in Sources */,
+				59D752AD235A9E8D0058E2D7 /* MovieViewCell.swift in Sources */,
 				59D7527D235A8F1C0058E2D7 /* SceneDelegate.swift in Sources */,
 				59D752AB235A8F790058E2D7 /* MoviesViewController.swift in Sources */,
 			);

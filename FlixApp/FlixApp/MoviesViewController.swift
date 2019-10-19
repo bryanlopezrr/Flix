@@ -41,6 +41,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
               // TODO: Store the movies in a property to use elsewhere
               // TODO: Reload your table view data
                 
+            self.tableView.reloadData()
+            
            }
         }
         task.resume()
@@ -50,13 +52,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieViewCell
         
-        cell.textLabel!.text = "row: \(indexPath.row)"
+        let movie = movies[indexPath.row]
+        let title = movie["title"] as! String
+        
+        cell.titleLabel.text = title
         
         return cell
     }
