@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="nice" translatesAutoresizingMaskIntoConstraints="NO" id="T6v-0E-U17">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Basic__54-512" translatesAutoresizingMaskIntoConstraints="NO" id="T6v-0E-U17">
                                 <rect key="frame" x="126" y="247" width="122" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -30,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="nice" width="89" height="86"/>
+        <image name="Basic__54-512" width="512" height="512"/>
     </resources>
 </document>
