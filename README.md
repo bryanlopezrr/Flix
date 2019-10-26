@@ -20,8 +20,9 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="http://g.recordit.co/lPD1yNprhD.gif" width=250><br>
 
 ### Notes
-
-while working on part 2 of this app, I realized the value of version control and keeping track of your code changes. I worked on a large portion of the project just to realize I had made a huge mistake and could no go back. I had to start the project from scratch and wasted a lot of time. 
+while working on part 2 of this app, I realized the value of version control and keeping track of your code base changes. I worked on a large portion of the project just to realize I had made a huge mistake and could no go back. I had to start the project from scratch. That was probably my biggest challenge.
+questions I was able to push through and gain some valuable knowldege.
+ 
 ---
 
 ## Flix Part 1
@@ -38,7 +39,7 @@ while working on part 2 of this app, I realized the value of version control and
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-<img src="http://g.recordit.co/sA1emyE5oj.gif" width=250><br>
+<img src="http://g.recordit.co/sA1emyE5oj.gif" width=250><img src="http://g.recordit.co/2yvJeU5cXO.gif" width=250><br>
 
 ### Notes
 One of the challenges I encountered while working on this application was understanding 'Storyboard' Swift mobile application development. Initially, I tried to complete the assignment with the latest SwiftUI without any success. 
