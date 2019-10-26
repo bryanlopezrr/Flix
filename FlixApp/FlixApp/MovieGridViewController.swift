@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import AlamofireImage
 
-class MovieGridViewController: UIViewController {
 
+class MovieGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+   
+
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     var movies = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
 
         
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing*2) / 3
+        layout.itemSize = CGSize(width: width, height: width * 3/2)
+        
         // Do any additional setup after loading the view.
-    
+
         //                            |||
         //NETWORK REQUEST CODE SNIPET vvv   ------
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
@@ -35,26 +49,42 @@ class MovieGridViewController: UIViewController {
         /*print(dataDictionary) console print to check the API loaded properly*/
             //dataDictionary storing the JSON format API to search and use
             self.movies = dataDictionary["results"] as! [[String:Any]]
-            
+
+            self.collectionView.reloadData()
+
             // TODO: Get the array of movies
             // TODO: Store the movies in a property to use elsewhere
             // TODO: Reload your table view data
-            
+
            }
         }
         task.resume()
-        
+
+    }
+
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return movies.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCollectionViewCell", for: indexPath) as! MovieGridCollectionViewCell
+        
+        
+        let movie = movies[indexPath.item]
+        
+        let baseURL = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterURL = URL(string: baseURL + posterPath)
+        
+        cell.posterView.af_setImage(withURL: posterURL!)
+        
+        return cell
     }
-    */
-
+    
+    
+    
+    
 }
+
+
